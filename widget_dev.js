@@ -3,7 +3,7 @@ function assistant_widget(assistant_id) {
     if (document.cookie.includes(`assistant_widget=${currentURL}`)) {
         createAndAppendWidget(assistant_id);
     } else {
-        fetch(`https://brainfab-assistant.bubbleapps.io/version=5pml/api/1.1/wf/widget_validator?assistant_id=${assistant_id}&url=${encodeURIComponent(currentURL)}`)
+        fetch(`https://brainfab-assistant.bubbleapps.io/version-5pml/api/1.1/wf/widget_validator?assistant_id=${assistant_id}&url=${encodeURIComponent(currentURL)}`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`Access to the widget is denied: ${response.status}`);
