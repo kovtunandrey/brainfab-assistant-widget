@@ -74,7 +74,7 @@ function createAndAppendWidget(assistant_id) {
         <div id="chat-widget" onclick="toggleChat()"></div>
         <div id="chat-container">
             <div id="iframe-container">
-                <iframe style="border:0px; height:100%" src="https://assistant.brainfab.com/version-5pml/widget-chat/${encodeURIComponent(assistant_id)}"></iframe>
+                <iframe style="border:0px; width: 100%; height:100%" src="https://assistant.brainfab.com/version-5pml/widget-chat/${encodeURIComponent(assistant_id)}"></iframe>
             </div>
         </div>
     </body>`;
