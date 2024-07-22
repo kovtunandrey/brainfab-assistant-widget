@@ -66,7 +66,9 @@ function createAndAppendWidget(assistant_id) {
 }
 @media (max-width: 765px) {
     #chat-widget {
-        padding: 50px;
+        width: 65px;
+        height: 65px;
+        background-size: 90%;
     }
 }
 </style>
